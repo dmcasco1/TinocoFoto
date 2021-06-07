@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Carla Tinoco Fotografia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carla Tinoco fotografia. Estudio de fotografia, filamacion, entrevistas. Hacemos realidad tus sueños!">
+    <meta name="keywords" content="fotografia filmacion entrevista carla tinoco foto video">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="EstiloTinoco/estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:wght@400&display=swap">
+    
+</head>
+
+<body id="bodyIndex">
+    <div class="container">
+
+     <!-- Menu de navegacion -->   
+    <div  class="menuNavegacion">
+        <nav>
+            <a href="index.html" class="MenuActive">Home</a>
+            <a href="fotografia.html">Fotografia</a>
+            <a href="filmaciones.html">Filmaciones</a>
+
+            <!-- Submenu Navegacion -->
+            <div class="subnav">    
+            <button class="subnavbtn"><a href="contacto.html">Contacto</a></button>
+                <div class="subnav-content">
+                <a href="index.html">Sobre nosotros</a>
+                <a href="presupuestos.html">Presupuestos armados</a>
+            </div>
+        </div> 
+        </nav>
+    </div>
+
+    <div class="header">
+    <header>
+        <!-- Descripcion personal -->
+        <title class="tituloSection"><b>Carla Tinoco Fotografia y Direccion</b></title><hr><br>
+       <p class="bodySection"><b>Bienvenidos a mi Portfolio web!</b><br>
+        Mi nombre es Carla Tinoco, soy Técnica en producción digital y Licenciada en Artes Digitales.<br>
+        Soy creadora de contenido digital para todo tipo de plataformas y asesoro sobre comercio electrónico y marketing digital a pymes.<br>
+        <br>Actualmente participo de dos proyectos en la misma universidad, tales como "Desarrollo audiovisual y autopercepción: integración de la triple frontera entre Argentina, Brasil y Uruguay" e "Integración educativa de escuelas en la triple frontera de Argentina, Brasil y Uruguay"<br>
+        <br>Las Artes Digitales son mi pasion, y siempre busco entregar un producto acorde a los requerimientos del cliente y cumplir sus expectativas.<br>
+        Si te interesa trabajar conmigo, utiliza la seccion de <b>Contacto</b> y arranquemos a volver realidad tus sueños!
+        </p>
+    </header>
+    </div>
+
+    <!-- Descripcion del Equipo -->
+    <div class="sobreNosotros">
+        <h1 class="tituloSection">El Equipo</h1><hr>
+        <p class="bodySection">
+            Somos un equipo de producción audiovisual independiente. Creamos contenido digital para diferentes proyectos. <br>
+            Nuestra producción cuenta con un anfitrión, flujo de producción (quienes monitorean detalles de la grabación) y productor y director quienes evalúan la producción para mejorar el producto audiovisual.<br><br>
+        </p>
+        </div>
+        
+        <div class="tareas">
+            <button type="button" class="collapsible">Nuestras tareas</button>
+            <div class="content">
+            <p>Todo nuestro trabajo se divide en 3 etapas, las cuales son:<br>
+            <li id="list">La <b>preproducción</b> (tomamos decisiones sobre los aspectos referidos a la película, corto o documental tales como definir presupuestos, conformación de equipo de filmación, plan de rodaje, entre otros)</li>
+            <li id="list">La <b>producción</b> (se dirige al equipo, se graba en las locaciones y se ejecuta los gastos)</li>
+            <li id="list">La <b>postproducción</b> (el paso final de la realización del video con detalles técnicos en el proceso. El montaje y la edición son las actividades centrales)</li>
+            </p>
+            </div>
+            <a class="btn btn-outline-info" a href="presupuestos.html" role="button">Mas Info</a>
+        </div>  
+
+    <!--  Imagenes del equipo  -->    
+    <div class="imagenNosotros">
+        <img src="imagenesTinoco/nosotros1.png" height="500px" width="500px" alt="Tinoco equipo">
+            
+    </div>
+    
+
+
+    
+    <!-- Pie de pagina -->
+    <div class="footer">
+        <footer>
+            <p class="footerTextLeft">
+            <a href="index.html" class="menu">Home</a>
+            <a href="index.html#sobreNosotros" class="menu">Nosotros</a></p>
+            <p class="footerTextRight">Author: Daniela Casco<br>
+            <a href="mailto:daniela.casco@gmail.com">Send me an email. Click here!</a></p>
+        </footer>
+    </div>
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+</body>
+</html>

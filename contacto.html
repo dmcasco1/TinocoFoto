@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Carla Tinoco fotografia. Estudio de fotografia, filamacion, entrevistas. Hacemos realidad tus sueños!">
+        <meta name="keywords" content="fotografia filmacion entrevista carla tinoco foto video">
+        <link rel="stylesheet" href="EstiloTinoco\estilo.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:wght@200&display=swap">
+    </head>
+    <body id="body">
+        
+         <!-- Menu de navegacion -->   
+         <div  class="menuNavegacion">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="fotografia.html">Fotografia</a>
+                <a href="filmaciones.html">Filmaciones</a>
+
+                <!-- Submenu Navegacion -->
+                <div class="subnav">    
+                <button class="subnavbtn"><a href="contacto.html" class="MenuActive">Contacto</a></button>
+                    <div class="subnav-content">
+                    <a href="#SobreNosotros">Sobre nosotros</a>
+                    <a href="presupuestos.html">Presupuestos armados</a>
+                </div>
+            </div> 
+            </nav>
+        </div>
+
+<!-- formulario Contacto -->
+        <main>
+        <section class="bordesSection">
+        <h1 class="tituloSection">Contacto</h1><hr>
+        <form action="" class="bodySection">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre"> Nombre: </label>
+            <input type="text" name="nombre" placeholder="Nombre"><br>
+            <label for="apellido"> Apellido:</label>
+            <input type="text" name="apellido" placeholder="Apellido"><br>
+            <label for="email"> Email:</label>
+            <input type="email" name="email" placeholder="Email"><br>
+            <label for="comentarios">Mensaje:</label><br>
+            <textarea name="comentarios" cols="30" rows="10"></textarea><Br>
+            <label for="Newsletter"> Desea recibir promociones y descuentos por mail?</label>
+            <input type="checkbox" name="Acepta" value="1"/><br><label for="Telefono"> Desea ser contactado por telefono? (dejar numero en comentarios) </label>
+            <select name="telefono"/>
+                <option value="SI">SI</option>    
+                <option value="NO">NO</option>
+            </select><br>
+            <input type="submit" value="Enviar el formulario"/>
+            <input type="reset" value="Borrar el formulario"/>    
+                   
+        </fieldset>
+        </form>
+    </section>    
+    </main>
+    <!-- Pie de pagina -->
+    <div class="footer">
+        <footer>
+            <p class="footerTextLeft">
+            <a href="index.html" class="menu">Home</a>
+            <a href="index.html#sobreNosotros" class="menu">Nosotros</a></p>
+            <p class="footerTextRight">Author: Daniela Casco<br>
+            <a href="mailto:daniela.casco@gmail.com">Send me an email. Click here!</a></p>
+        </footer>
+    </div>
+   
+</body>
+</html>

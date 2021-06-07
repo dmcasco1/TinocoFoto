@@ -1,0 +1,14 @@
+/* Seccion Filmaciones */
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+.videosMuestra{
+    @include sizes(350px, 350px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ 
+
+}

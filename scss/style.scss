@@ -1,0 +1,79 @@
+  /* IMPORTS */
+@import "footer";
+@import "table";
+@import "filmacion";
+
+
+/* Boton collapsable Sobre Nosotros */
+.tareas__collapsible {
+    background-color: #99D9D2;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+  }
+  .active, .collapsible:hover {
+    background-color: #388e99;
+  }
+  /* Boton collapsible mas y menos */
+.collapsible:after {
+    content: '\02795'; 
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; 
+    color: white;
+  }
+  /* Contenido tareas */
+  .tareas__content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #a8d6d1;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color:#1A5276;
+  }
+
+
+/* Estilo General Secciones Sobre nosotros */
+.sobreNosotros__tituloSection{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 50px;
+}
+.sobreNosotros__bodySection{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color:#1A5276;
+}
+/* Estilo Generico Header */
+.header__tituloSection{
+  @extend .sobreNosotros__tituloSection;
+  color:#168796;
+}
+
+.header__bodySection{
+  @extend .sobreNosotros__bodySection;
+  color:#168796;
+}
+
+
+ /* BUCLES */
+ @for $i from 1 to 3 {
+   h#{$i} {
+     font-size: 1em / $i;
+   }
+   
+ }
